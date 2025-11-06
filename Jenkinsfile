@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'Setting up Python environment...'
                 bat '''
-                python3 -m venv venv
+                python -m venv venv
                 call venv\\Scripts\\activate
                 pip install -r requirements.txt
                 '''
