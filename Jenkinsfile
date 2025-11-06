@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        python "python"
+        "jenkins.plugins.shiningpanda.tools.PythonInstallation" "python"
     }
 
     environment {
